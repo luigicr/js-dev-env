@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "JavaScript development environment Pluralsight course by Cory House",
     "scripts": {
-        "prestart": "node build_scripts/startMessage.js",
+        "prestart": "babel-node build_scripts/startMessage.js",
         "start": "npm-run-all --parallel security-check open:src",
-        "open:src": "node build_scripts/srcServer.js",
+        "open:src": "babel-node build_scripts/srcServer.js",
         "security-check": "nsp check",
         "localtunnel": "lt --port 3000 --subdomain luigi",
         "share": "npm-run-all --parallel open:src localtunnel"
