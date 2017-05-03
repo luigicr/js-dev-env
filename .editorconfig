@@ -19,3 +19,10 @@ trim_trailing_whitespace = true
 [*.md]
 # Denotes whether whitespace is allowed at the end of lines
 trim_trailing_whitespace = false
+
+[*.js]
+quote_type = single
+curly_bracket_next_line = false
+spaces_around_operators = true
+spaces_around_brackets = inside
+indent_brace_style = BSD KNF
