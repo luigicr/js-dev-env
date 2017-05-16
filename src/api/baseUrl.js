@@ -1,5 +1,5 @@
 export default function getBaseUrl() {
-    return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : '/';
+    return getQueryStringParameterByName('useMockApi') ? 'http://localhost:3001/' : 'https://tranquil-castle-58763.herokuapp.com/';
     // const inDevelopment = window.location.hostname === 'localhost';
     // return inDevelopment ? 'http://localhost:3001/' : '/';
 }
